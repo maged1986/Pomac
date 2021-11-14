@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:elevation="11dp"
+        android:layout_margin="12dp">
+
+        <LinearLayout
+            android:id="@+id/news_list_ll_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/news_list_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:maxLines="2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <ImageView
+                android:id="@+id/news_list_iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@color/purple_700" />
+
+            <TextView
+                android:id="@+id/news_list_tv_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="published by"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/news_list_tv_published_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="published_date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>
